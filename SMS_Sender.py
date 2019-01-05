@@ -16,8 +16,8 @@ import requests
  
 url = "https://www.fast2sms.com/dev/bulk"
 
-msg=input("Enter the message you want to send: ")
-num=input("Enter the phone numbers you want to send, separated by a comma :")
+msg=input("Enter the message you want to send: ")                         
+num=input("Enter the phone numbers you want to send, separated by a comma :")  # xxxxxxxxxx,xxxxxxxxxx
  
 payload = "sender_id=FSTSMS&message={}&language=english&route=p&numbers={}".format(msg,num)
 headers = {
