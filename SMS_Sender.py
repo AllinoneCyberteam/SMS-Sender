@@ -1,3 +1,16 @@
+""" Steps to be done :
+1. Create an account in FAST2SMS
+2. Get your API in the DEV API section.
+3. Copy that API in the authorization field.
+4. Run the program and your are ready to go.
+5. If you have not installed the requests library. Install it Using "pip install requests".
+"""
+# -*- coding: utf-8 -*-
+"""
+Created on Fri Jan  4 22:26:56 2019
+
+@author: Akash
+"""
 
 import requests
  
@@ -8,7 +21,7 @@ num=input("Enter the phone numbers you want to send, separated by a comma :")
  
 payload = "sender_id=FSTSMS&message={}&language=english&route=p&numbers={}".format(msg,num)
 headers = {
- 'authorization': "WVDprqN9LbCUE7B5TF1XSmMiZ3aOQYgjcsGowhedP2n86JltRIEaOpmglJ1A5cenuDK7jUTZ6qBWRxYQ",
+ 'authorization': "YOUR_API_KEY", #Copy your API Key here
  'Content-Type': "application/x-www-form-urlencoded",
  'Cache-Control': "no-cache",
  }
