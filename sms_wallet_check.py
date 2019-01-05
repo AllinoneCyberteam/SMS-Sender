@@ -10,7 +10,7 @@ import requests
 url = "https://www.fast2sms.com/dev/wallet"
 
 headers = {
-    'authorization': "WVDprqN9LbCUE7B5TF1XSmMiZ3aOQYgjcsGowhedP2n86JltRIEaOpmglJ1A5cenuDK7jUTZ6qBWRxYQ",
+    'authorization': "YOUR_API_KEY",
     }
 
 response = requests.request("POST", url, headers=headers)
